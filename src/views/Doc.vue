@@ -1,3 +1,3 @@
 <template>
-	<h1>soy el short</h1>
+	<h1>soy el doc</h1>
 </template>

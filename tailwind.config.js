@@ -6,14 +6,12 @@ module.exports = {
   theme: {
     colors: {
       blanco: '#ffffff',
-      back: '#161616',
-      primary: '#222222',
-      secundary: '#333333',
-      terciary: '#838383',
+      back: '#181A20',
+      gris: '#ffffff70',
+      trans: '#ffffff10',
+      trans2: '#83838320',
       azul: '#2697ff',
-      rojo: '#ff6060',
-      trans: '#16161680',
-      trans2: '#83838360',
+      violeta: '#3959FF',
     },
     screens: {
       360: '360px',

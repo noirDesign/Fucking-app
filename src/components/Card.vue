@@ -1,6 +1,6 @@
 <template>
 	<main
-		class="bg-primary rounded-30 overflow-hidden flex flex-col my-20 mx-40"
+		class="bg-primary rounded-30 overflow-hidden flex flex-col my-20 mx-100"
 	>
 		<img :src="item.thumbnailUrl" class="object-cover h-200" />
 		<div class="flex flex-col p-15">

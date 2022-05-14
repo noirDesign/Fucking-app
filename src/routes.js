@@ -1,8 +1,5 @@
 import Home from './views/Home.vue'
-import Search from './views/Search.vue'
-import Short from './views/Short.vue'
-import Activity from './views/Activity.vue'
-import User from './views/User.vue'
+import Doc from './views/Doc.vue'
 
 /** @type {import('vue-router').RouterOptions['routes']} */
 export const routes = [
@@ -13,23 +10,8 @@ export const routes = [
     component: Home,
   },
   {
-    path: '/Search',
-    meta: { title: 'Search' },
-    component: Search,
-  },
-  {
-    path: '/Short',
-    meta: { title: 'Short' },
-    component: Short,
-  },
-  {
-    path: '/Activity',
-    meta: { title: 'Activity' },
-    component: Activity,
-  },
-  {
-    path: '/User',
-    meta: { title: 'User' },
-    component: User,
+    path: '/Doc',
+    meta: { title: 'Doc' },
+    component: Doc,
   },
 ]
