@@ -9,6 +9,7 @@ export default {
 	data() {
 		return {
 			modal: false,
+			mail: false,
 		};
 	},
 };
@@ -21,39 +22,53 @@ export default {
 	>
 		<div
 			id="nav-container"
-			class="bg-trans flex-col flex justify-between items-center rounded-[22px] py-8"
+			class="bg-trans deg2 flex-col flex justify-between items-center rounded-[22px] py-8 show"
 		>
 			<router-link to="'/" class="nav-hover">
 				<Homenav />
-				<h4 class="nav-text">Home</h4>
+				<h4 class="nav-text transition-all ease-in-out">Home</h4>
 			</router-link>
-			<a class="nav-hover">
+			<a class="nav-hover" @click="mail = true">
 				<Mailnav />
-				<div id="mail">
-					<Mail />
-				</div>
+				<h4 class="nav-text transition-all ease-in-out">Contactarse</h4>
 			</a>
 			<router-link to="'/Doc" class="nav-hover">
 				<Docnav />
-				<h4 class="nav-text">Documentacion</h4>
+				<h4 class="nav-text transition-all ease-in-out">
+					Documentacion
+				</h4>
 			</router-link>
 			<div
 				class="logo-fuck absolute top-20 nav-hover btn hover:bg-trans"
 				@click="modal = true"
 			>
 				<img src="./assets/icons/fdlogo.png" class="w-30" />
-				<h4 class="nav-text">Ver Hablilidades</h4>
+				<h4 class="nav-text transition-all ease-in-out">
+					Ver Hablilidades
+				</h4>
 			</div>
 		</div>
 	</main>
 
-	<router-view />
+	<main
+		class="h-screen fixed left-100 items-center flex show z-[200]"
+		v-show="mail"
+		id="mail-container"
+	>
+		<Mail @click="mail = false" />
+	</main>
 
-	<main id="sidebar" class="w-[500px] h-screen sticky p-20" v-show="modal">
+	<router-view class="show" />
+
+	<main
+		id="sidebar"
+		class="w-[500px] h-screen sticky p-20 show top-0"
+		v-show="modal"
+	>
 		<Sidebar />
 		<div
 			id="sidebarequis"
-			class="w-40 h-40 rounded-15 hover:bg-trans justify-center flex items-center absolute top-30 right-30"
+			class="w-40 h-40 rounded-15 transition-all ease-in-out hover:bg-trans justify-center flex items-center absolute top-30 right-30"
 			@click="modal = false"
 		>
 			<img src="./assets/icons/equis.svg" class="icons" />
@@ -76,7 +91,6 @@ body {
 	color: #fff;
 	font-weight: 'thin';
 	font-family: inter;
-	line-height: 18px;
 }
 
 #app {
@@ -103,24 +117,13 @@ h4 {
 
 .nav-text {
 	padding: 5px 12px;
-	background-color: #ffffff10;
+	background-color: #33333380;
 	position: absolute;
-	left: 90px;
+	left: 0px;
 	border-radius: 10px;
-	visibility: hidden;
+	opacity: 0;
 	backdrop-filter: blur(20px);
-}
-
-#mail {
-	padding: 20px;
-	background-color: #ffffff10;
-	position: absolute;
-	left: 80px;
-	width: 300px;
-	height: 500px;
-	border-radius: 30px;
-	visibility: hidden;
-	backdrop-filter: blur(20px);
+	transform: scale(0);
 }
 
 .nav-hover {
@@ -131,13 +134,34 @@ h4 {
 }
 .nav-hover:hover .nav-text {
 	visibility: visible;
+	opacity: 1;
+	left: 90px;
+	transform: scale(1);
 }
 
 .nav-hover:hover #mail {
 	visibility: visible;
 }
 
-@media (max-width: 600px) {
+.show {
+	animation: show ease-in-out 0.2s;
+}
+
+@keyframes show {
+	0% {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	0% {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+}
+@media (max-width: 800px) {
 	#app {
 		flex-direction: column !important;
 	}
@@ -149,14 +173,15 @@ h4 {
 		position: fixed !important;
 		bottom: 0px !important;
 		top: auto !important;
-		margin: 0px !important;
 	}
 	#nav-container {
 		flex-direction: row !important;
-		width: 100%;
+		background-color: #33333350 !important;
 		padding: 0px 10px;
 		border-radius: 100px;
 		width: 360px;
+		margin: 10px 0px;
+		backdrop-filter: blur(20px);
 	}
 	#mail {
 		bottom: 80px !important;
@@ -170,9 +195,12 @@ h4 {
 		left: 0px !important;
 		right: 0px !important;
 		width: 100% !important;
+		height: 100% !important;
 		margin: 0px !important;
 		padding: 0px !important;
 		background-color: #181a20 !important;
+
+		z-index: 200 !important;
 	}
 
 	.nav-text {
@@ -200,18 +228,16 @@ h4 {
 		top: 20px !important;
 		right: 20px !important;
 	}
+	#mail-container {
+		width: 100% !important;
+		left: 0px;
+	}
 
 	h1 {
-		font-size: 40px;
+		font-size: 42px;
 	}
 	h2 {
-		font-size: 16px;
-	}
-	h3 {
-		font-size: 13px;
-	}
-	h4 {
-		font-size: 11px;
+		font-size: 14px;
 	}
 }
 

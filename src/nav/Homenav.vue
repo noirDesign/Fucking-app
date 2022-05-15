@@ -63,6 +63,7 @@
 }
 .router-link-exact-active .homeicon {
 	background: linear-gradient(90deg, #64a9ff 0%, #2a4eff 100%);
+	box-shadow: 0px 10px 20px -5px #2a4eff90;
 }
 
 .router-link-exact-active #home-back {
