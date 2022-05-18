@@ -1,40 +1,57 @@
 [
 	{
 		"id": 1,
-		"title": "Celular",
+		"title": "Phone marktech",
 		"imagen": "https://data-fucking.netlify.app/images/cell3.jpg",
 		"skill1": "https://data-fucking.netlify.app/icons/photo.svg",
-		"skill2": "https://data-fucking.netlify.app/icons/ilus.svg"
+		"nombre1": "Photoshop",
+		"skill2": "https://data-fucking.netlify.app/icons/ilus.svg",
+		"nombre2": "Ilustrator"
 	},
 	{
 		"id": 2,
-		"title": "Celular",
+		"title": "Cerveza Heineiken",
 		"imagen": "https://data-fucking.netlify.app/images/lata.jpg",
 		"skill1": "https://data-fucking.netlify.app/icons/photo.svg",
-		"skill2": "https://data-fucking.netlify.app/icons/figma.svg",
-		"skill3": "https://data-fucking.netlify.app/icons/vue.svg"
+		"nombre1": "Photoshop",
+		"skill2": "https://data-fucking.netlify.app/icons/ilus.svg",
+		"nombre2": "Ilustrator",
+		"skill3": "https://data-fucking.netlify.app/icons/vue.svg",
+		"nombre3": "Vue js"
 	},
 	{
 		"id": 3,
-		"title": "Celular",
+		"title": "Grafica 8",
 		"imagen": "https://data-fucking.netlify.app/images/spr1.png",
+		"imagen2": "https://data-fucking.netlify.app/images/spr2.png",
 		"skill1": "https://data-fucking.netlify.app/icons/photo.svg",
-		"skill2": "https://data-fucking.netlify.app/icons/ilus.svg"
+		"nombre1": "Photoshop",
+		"skill2": "https://data-fucking.netlify.app/icons/ilus.svg",
+		"nombre2": "Ilustrator",
+		"descripcion": "Grafico con ilustrator con union de nodos"
 	},
 	{
 		"id": 4,
-		"title": "Celular",
-		"imagen": "https://data-fucking.netlify.app/images/seguro.jpg",
+		"title": "Seguros",
+		"imagen": "https://data-fucking.netlify.app/images/media2.jpg",
 		"skill1": "https://data-fucking.netlify.app/icons/photo.svg",
+		"nombre1": "Photoshop",
 		"skill2": "https://data-fucking.netlify.app/icons/ilus.svg",
+		"nombre2": "Ilustrator",
 		"skill3": "https://data-fucking.netlify.app/icons/react.svg",
-		"skill4": "https://data-fucking.netlify.app/icons/html.svg"
+		"nombre3": "React Native",
+		"skill4": "https://data-fucking.netlify.app/icons/html.svg",
+		"nombre4": "Html",
+		"descripcion": "Un gran trabajo con seguros Antonio, la imagen le corresponde los derechos a @raul",
+		"desimagen": "https://data-fucking.netlify.app/icons/desigcolor.svg"
 	},
 	{
 		"id": 5,
-		"title": "Celular",
+		"title": "Smartwatch",
 		"imagen": "https://data-fucking.netlify.app/images/watch2.jpg",
 		"skill1": "https://data-fucking.netlify.app/icons/photo.svg",
-		"skill2": "https://data-fucking.netlify.app/icons/ilus.svg"
+		"nombre1": "Photoshop",
+		"skill2": "https://data-fucking.netlify.app/icons/ilus.svg",
+		"nombre2": "Ilustrator"
 	}
 ]

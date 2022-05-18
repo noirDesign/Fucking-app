@@ -2,11 +2,12 @@
 	<main class="flex flex-col w-full">
 		<Portada id="container-home" />
 		<section class="w-full flex flex-row justify-center my-30">
-			<div
+			<a
+				href="#categoria-bg"
 				class="flex justify-center w-40 h-40 bg-trans rounded-15 deg2 animate-bounce"
 			>
 				<img src="../assets/icons/arrow.svg" class="icons" />
-			</div>
+			</a>
 		</section>
 		<section
 			class="overflow-x-scroll w-full sticky top-0 z-10 rounded-20 backdrop-blur-xl"

@@ -28,12 +28,13 @@
 			</h3>
 
 			<section class="flex flex-row my-[22px] items-center" id="doc-sect">
-				<div
+				<router-link
+					to="'/Doc"
 					class="deg px-20 py-10 rounded-30 transition-all ease-in-out"
 					id="ver-documentacion"
 				>
 					<h2>Ver Documentacion</h2>
-				</div>
+				</router-link>
 				<div class="flex flex-row mx-10">
 					<img src="../assets/icons/vue1.svg" class="w-32 mx-3" />
 					<img src="../assets/icons/tail1.svg" class="w-32 mx-3" />
