@@ -13,16 +13,16 @@
 			</div>
 			<section class="flex flex-row justify-around py-20">
 				<div class="flex flex-col text-center">
-					<h3>99</h3>
+					<h3>+19</h3>
 					<h4 class="text-gris">Proyectos</h4>
 				</div>
 				<div class="flex flex-col text-center">
-					<h3>99</h3>
-					<h4 class="text-gris">Proyectos</h4>
+					<h3>+3</h3>
+					<h4 class="text-gris">Clientes</h4>
 				</div>
 				<div class="flex flex-col text-center">
-					<h3>99</h3>
-					<h4 class="text-gris">Proyectos</h4>
+					<h3>12</h3>
+					<h4 class="text-gris">Skills</h4>
 				</div>
 			</section>
 
