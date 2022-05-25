@@ -95,6 +95,9 @@ body {
 	font-weight: 'thin';
 	font-family: inter;
 }
+a {
+	cursor: url(./assets/mouse.png), auto;
+}
 
 #app {
 	display: flex;

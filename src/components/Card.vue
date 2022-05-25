@@ -34,7 +34,7 @@
 				id="card-side-bg"
 			>
 				<section
-					class="w-full flex justify-center flex flex-col items-center"
+					class="w-full flex justify-center flex-col items-center"
 				>
 					<div
 						class="w-400 h-20 rounded-[100px] blur-[40px] relative bg-violeta"
@@ -43,7 +43,7 @@
 				</section>
 				<div class="flex flex-row w-full" id="card-side-col">
 					<section
-						class="w-[500px] rounded-40 overflow-hidden flex flex-row mb-20 ml-20 overflow-x-auto gap-10"
+						class="w-[500px] rounded-40 overflow-hidden overflow-x-auto flex flex-row mb-20 ml-20 gap-10"
 						id="card-sideslide"
 					>
 						<img :src="item.imagen" class="rounded-40" />
@@ -140,6 +140,18 @@ export default {
 </script>
 
 <style>
+#card-sideslide::-webkit-scrollbar {
+	height: 12px;
+	display: flex;
+}
+#card-sideslide::-webkit-scrollbar-track {
+	background: unset;
+}
+#card-sideslide::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+}
+
 @media (max-width: 800px) {
 	#card-round {
 		width: 100% !important;
@@ -164,10 +176,15 @@ export default {
 		width: 100% !important;
 		border-radius: 0px;
 		padding: 0px 20px !important;
+		scroll-snap-type: x mandatory;
 	}
-	#card-sideslide img {
+	#card-sideslide::-webkit-scrollbar {
+		display: none;
+	}
+	#card-sideslide > img {
 		border-radius: 30px !important;
 		width: 100% !important;
+		scroll-snap-align: center;
 	}
 	#card-side-desc {
 		width: 100% !important;
