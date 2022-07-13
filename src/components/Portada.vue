@@ -21,7 +21,7 @@
 				bienvenido.
 			</h1>
 			<h3 id="text-gris">
-				Hola soy Juan, en mi portfolio podras ver los trabajos que voy
+				Hola soy Carlos, en mi portfolio podras ver los trabajos que voy
 				haciendo y las habilidades que tengo en el sidebar, esta
 				proyecto esta en proceso pero podes ver la documentacion del
 				mismo.
