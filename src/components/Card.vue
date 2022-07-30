@@ -19,7 +19,7 @@
 
 		<section
 			v-show="card"
-			class="bg-[#181a20ab] backdrop-blur-xl fixed top-0 bottom-0 left-0 right-0 w-full h-full flex justify-center items-center z-[200]"
+			class="bg-[#181a20ab] fixed top-0 bottom-0 left-0 right-0 w-full h-full flex justify-center items-center z-[200]"
 		>
 			<div
 				@click="card = false"
