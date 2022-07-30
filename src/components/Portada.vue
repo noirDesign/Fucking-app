@@ -16,7 +16,7 @@
 			</div>
 
 			<h1 class="font-semibold text-up mb-10">
-				!Hola, este crack<br />
+				!Hola, este<br />
 				es mi <span class="text-degradado">Portafolio,</span> <br />
 				bienvenido.
 			</h1>
