@@ -28,7 +28,7 @@
 </template>
 
 <style>
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 	#port-categoria {
 		justify-content: left !important;
 	}

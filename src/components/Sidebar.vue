@@ -1,7 +1,7 @@
 <template>
 	<main
 		id="sidebarbg"
-		class="bg-trans w-full h-full rounded-40 deg2 backdrop-blur-xl"
+		class="bg-trans h-full rounded-40 deg2 backdrop-blur-xl"
 	>
 		<section id="deg-side" class="px-15">
 			<div class="flex justify-center overflow-hidden pt-30 pb-10">
@@ -111,13 +111,14 @@
 
 #sidebarbg {
 	overflow: hidden !important;
+	width: 320px !important;
 }
 
 #side-skill div img {
 	width: 85px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
 	#sidebarbg {
 		background: linear-gradient(
 			36deg,
@@ -130,6 +131,7 @@
 		border: unset;
 		border-radius: 0;
 		overflow-y: scroll !important;
+		width: 100% !important;
 	}
 	#deg-side {
 		background: none;

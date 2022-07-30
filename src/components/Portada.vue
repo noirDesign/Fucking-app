@@ -1,5 +1,5 @@
 <template>
-	<main class="flex flex-row justify-between items-center px-15" id="portada">
+	<main class="flex flex-row justify-between items-center px-15 " id="portada">
 		<div id="home-deg"></div>
 
 		<section
@@ -96,7 +96,7 @@
 	font-weight: semibold;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 	#home-deg {
 		display: none;
 	}

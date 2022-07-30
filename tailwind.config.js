@@ -9,7 +9,7 @@ module.exports = {
       back: '#181A20',
       gris: '#ffffff70',
       trans: '#ffffff10',
-      trans2: '#22222250',
+      trans2: '#33333350',
       azul: '#2697ff',
       violeta: '#3959FF',
     },

@@ -22,7 +22,7 @@ export default {
 	>
 		<div
 			id="nav-container"
-			class="bg-trans deg2 flex-col flex justify-between items-center rounded-[22px] py-8 show"
+			class="bg-trans  deg2 flex-col flex justify-between items-center rounded-[22px] py-8 show"
 		>
 			<router-link to="'/" class="nav-hover">
 				<Homenav />
@@ -159,7 +159,7 @@ h4 {
 		opacity: 0;
 	}
 }
-@media (max-width: 800px) {
+@media (max-width: 1400px) {
 	#app {
 		flex-direction: column !important;
 	}
@@ -187,19 +187,11 @@ h4 {
 		right: auto !important;
 	}
 
-	#sidebar {
-		position: fixed !important;
-		top: 0px !important;
-		left: 0px !important;
-		right: 0px !important;
-		width: 100% !important;
-		height: 100% !important;
-		margin: 0px !important;
-		padding: 0px !important;
-		background-color: #181a20 !important;
-
-		z-index: 200 !important;
+	#sidebar{
+		visibility: hidden !important;
 	}
+
+	
 
 	.nav-text {
 		display: none;
@@ -239,7 +231,27 @@ h4 {
 	}
 }
 
+
+@media (max-width: 500px) {
+	#sidebar {
+		visibility: visible !important;
+		position: fixed !important;
+		top: 0px !important;
+		left: 0px !important;
+		right: 0px !important;
+		width: 100% !important;
+		height: 100% !important;
+		margin: 0px !important;
+		padding: 0px !important;
+		background-color: #181a20 !important;
+
+		z-index: 200 !important;
+	}
+}
 ::-webkit-scrollbar {
 	display: none;
 }
 </style>
+
+
+

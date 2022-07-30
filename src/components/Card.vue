@@ -1,7 +1,7 @@
 <template>
 	<main>
 		<section
-			class="overflow-hidden h-fit flex items-center w-[320px] flex-col"
+			class="overflow-hidden h-fit flex items-center max-w-[320px] flex-col"
 			id="card-round"
 			@click="card = true"
 		>
@@ -19,7 +19,7 @@
 
 		<section
 			v-show="card"
-			class="bg-[#181a20ab] fixed top-0 bottom-0 left-0 right-0 w-full h-full flex justify-center items-center z-[200]"
+			class="bg-[#181a20ab] backdrop-blur-md fixed top-0 bottom-0 left-0 right-0 w-full h-full flex justify-center items-center z-[200]"
 		>
 			<div
 				@click="card = false"
@@ -152,8 +152,9 @@ export default {
 	border-radius: 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
 	#card-round {
+		max-width: 100% !important;
 		width: 100% !important;
 		padding: 0px 20px;
 	}

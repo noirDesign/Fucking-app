@@ -22,10 +22,10 @@
 </template>
 
 <style>
-@media (max-width: 800px) {
+@media (max-width: 1400px) {
 	#mail-bg {
-		width: 100% !important;
-		margin: 0px 20px;
+		width: 330px !important;
+		margin: 20px auto !important;
 	}
 }
 </style>

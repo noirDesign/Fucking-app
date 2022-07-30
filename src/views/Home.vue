@@ -1,5 +1,5 @@
 <template>
-	<main class="flex flex-col w-full">
+	<main class="flex flex-col  w-full ">
 		<Portada id="container-home" />
 		<section class="w-full flex flex-row justify-center my-30">
 			<a
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style>
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
 	#container-home {
 		background: linear-gradient(
 			36deg,
